@@ -1,0 +1,436 @@
+{
+  "pageId": "11",
+  "pageName": "",
+  "pageCode": "",
+  "moduleId": "",
+  "pageTemplate": "",
+  "headerSlot": "",
+  "middleSlot": "",
+  "tailSlot": "",
+  "pageListConditions": [
+    {
+      "columnName": "1",
+      "columnComment": "项目名称",
+      "columnNameAlias": "",
+      "columnQueryOperator": "=",
+      "columnDisplayComponent": "ace-input",
+      "linkageConfig": {},
+      "columnDefault": "",
+      "isRequire": "",
+      "columnSlot": "",
+      "props": {
+        "placeholder": "",
+        "clearable": false,
+        "disabled": false
+      },
+      "ruleConfigs": [
+        {
+          "ruleType": "require",
+          "text": "请输入"
+        },{
+          "ruleType": "maxlength",
+          "condition": {
+            "maxlength": 100
+          }
+        },{
+          "ruleType": "range",
+          "condition": {
+            "min": 100,
+            "max": 2000
+          }
+        }
+      ]
+    },
+    {
+      "columnName": "1",
+      "columnComment": "项目名称",
+      "columnNameAlias": "",
+      "columnQueryOperator": "=",
+      "columnDisplayComponent": "ace-select",
+      "linkageConfig": {},
+      "columnDefault": "",
+      "isRequire": "",
+      "columnSlot": "",
+      "props": {
+        "placeholder": "",
+        "clearable": false,
+        "disabled": false,
+        "dict": "COMMON_STATUS"
+      },
+      "ruleConfigs": [
+        {
+          "ruleType": "require",
+          "text": "请输入"
+        },{
+          "ruleType": "maxlength",
+          "condition": {
+            "maxlength": 100
+          }
+        },{
+          "ruleType": "range",
+          "condition": {
+            "min": 100,
+            "max": 2000
+          }
+        },{
+          "ruleType": "regular",
+          "condition":{
+            "regularType":"",
+            "regularValue": ""
+          }
+        },{
+          "ruleType": "api",
+          "condition": {
+            "apiURL":""
+          }
+        }
+      ]
+    },
+    {
+      "columnName": "1",
+      "columnComment": "项目名称",
+      "columnNameAlias": "",
+      "columnQueryOperator": "=",
+      "columnDisplayComponent": "ace-select",
+      "linkageConfig": {},
+      "columnDefault": "",
+      "isRequire": "",
+      "columnSlot": "",
+      "props": {
+        "placeholder": "",
+        "clearable": false,
+        "disabled": false,
+        "dict": "COMMON_STATUS"
+      }
+    },
+    {
+      "columnName": "1",
+      "columnComment": "项目名称",
+      "columnNameAlias": "",
+      "columnQueryOperator": "=",
+      "columnDisplayComponent": "ace-input",
+      "linkageConfig": {},
+      "columnDefault": "",
+      "isRequire": "",
+      "columnSlot": "",
+      "props": {
+        "placeholder": "",
+        "clearable": false,
+        "disabled": false
+      }
+    }
+  ],
+  "pageButtons": [
+    {
+      "buttonType": "Left",
+      "operationType": "create",
+      "buttonName": "新增",
+      "buttonStyle": "primary",
+      "buttonIcon": "plus",
+      "openWay": "dialog",
+      "relevancePage": "123123"
+    },{
+      "buttonType": "Right",
+      "operationType": "create",
+      "buttonName": "下载",
+      "buttonStyle": "primary",
+      "buttonIcon": "plus",
+      "openWay": "newTab",
+      "relevancePage": "123123"
+    },{
+      "buttonType": "Left",
+      "operationType": "create",
+      "buttonName": "新增",
+      "buttonStyle": "primary",
+      "buttonIcon": "plus",
+      "openWay": "dialog",
+      "relevancePage": "123123"
+    },{
+      "buttonType": "Row",
+      "operationType": "edit",
+      "buttonName": "编辑",
+      "buttonStyle": "primary",
+      "buttonIcon": "plus",
+      "openWay": "dialog",
+      "relevancePage": "123123",
+      "showConditionType": 1,
+      "showCondition": {
+        "operator": "and",
+        "conditions": [
+          {
+            "field": "name",
+            "operator": "eq",
+            "value": "1111"
+          },
+          {
+            "field": "name",
+            "operator": "eq",
+            "value": "1111"
+          }
+        ],
+        "groups": [
+          {
+            "operator": "or",
+            "conditions": [
+              {
+                "field": "name",
+                "operator": "eq",
+                "value": "1111"
+              },
+              {
+                "field": "name",
+                "operator": "eq",
+                "value": "1111"
+              }
+            ]
+          }
+        ]
+      }
+    },{
+      "buttonType": "Row",
+      "operationType": "export",
+      "buttonName": "下载",
+      "buttonStyle": "primary",
+      "buttonIcon": "plus",
+      "openWay": "dialog",
+      "relevancePage": "123123",
+      "showConditionType": 1,
+      "showCondition": {
+        "operator": "and",
+        "conditions": [
+          {
+            "field": "name",
+            "operator": "eq",
+            "value": "1111"
+          },
+          {
+            "field": "name",
+            "operator": "eq",
+            "value": "1111"
+          }
+        ],
+        "groups": [
+          {
+            "operator": "or",
+            "conditions": [
+              {
+                "field": "name",
+                "operator": "eq",
+                "value": "1111"
+              },
+              {
+                "field": "name",
+                "operator": "eq",
+                "value": "1111"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "columns": [
+    {
+      "columnName": "field1",
+      "columnComment": "字段1",
+      "columnNameAlias": "日期格式",
+      "columnAlignment": "Left",
+      "columnFixedWidth": "Left",
+      "columnMinWidth": "100",
+      "isVisible": true,
+      "isColumnFixed": "Left",
+      "columnSlot": "",
+      "convertConfig": {
+
+      },
+      "formatConfig": {
+      },
+      "isTotalColumn": false,
+      "isColumnSort": false,
+      "columnHeadTips": "",
+      "columnHeadSlot": ""
+    },
+    {
+      "columnName": "field1",
+      "columnComment": "字段1",
+      "columnNameAlias": "日期格式",
+      "columnAlignment": "Left",
+      "columnFixedWidth": "Left",
+      "columnMinWidth": "100",
+      "isVisible": true,
+      "isColumnFixed": "Left",
+      "columnSlot": "",
+      "convertConfig": {
+        
+      },
+      "formatConfig": {
+        "conertType": "dateTime",
+        "formater": "yyyy-mm-dd"
+      },
+      "isTotalColumn": false,
+      "isColumnSort": false,
+      "columnHeadTips": "",
+      "columnHeadSlot": ""
+    },
+    {
+      "columnName": "field1",
+      "columnComment": "字段1",
+      "columnNameAlias": "字典转换",
+      "columnAlignment": "Left",
+      "columnFixedWidth": "Left",
+      "columnMinWidth": "100",
+      "isVisible": true,
+      "isColumnFixed": "Left",
+      "columnSlot": "",
+      "convertConfig": {
+        "conertType": "dict",
+        "dictName": "qqq"
+      },
+      "isTotalColumn": false,
+      "isColumnSort": false,
+      "columnHeadTips": "",
+      "columnHeadSlot": ""
+    },
+    {
+      "columnName": "field1",
+      "columnComment": "字段1",
+      "columnNameAlias": "金额格式",
+      "columnAlignment": "Left",
+      "columnFixedWidth": "Left",
+      "columnMinWidth": "100",
+      "isVisible": true,
+      "isColumnFixed": "Left",
+      "columnSlot": "",
+      "formatConfig": {
+        "conertType": "amt",
+        "decimalType":1,
+        "decimal": 2
+      },
+      "isTotalColumn": false,
+      "isColumnSort": false,
+      "columnHeadTips": "",
+      "columnHeadSlot": ""
+    },
+    {
+      "columnName": "field1",
+      "columnComment": "字段1",
+      "columnNameAlias": "比率格式",
+      "columnAlignment": "Left",
+      "columnFixedWidth": "Left",
+      "columnMinWidth": "100",
+      "isVisible": true,
+      "isColumnFixed": "Left",
+      "columnSlot": "",
+      "formatConfig": {
+        "conertType": "rate",
+        "decimalType":1,
+        "decimal": 2
+      },
+      "isTotalColumn": false,
+      "isColumnSort": false,
+      "columnHeadTips": "",
+      "columnHeadSlot": ""
+    },
+    {
+      "columnName": "field1",
+      "columnComment": "字段1",
+      "columnNameAlias": "以新字段格式化",
+      "columnAlignment": "Left",
+      "columnFixedWidth": "Left",
+      "columnMinWidth": "100",
+      "isVisible": true,
+      "isColumnFixed": "Left",
+      "columnSlot": "",
+      "formatConfig": {
+        "conertType": "newField",
+        "field": "_Text"
+      },
+      "isTotalColumn": false,
+      "isColumnSort": false,
+      "columnHeadTips": "",
+      "columnHeadSlot": ""
+    },
+    {
+      "columnName": "field1",
+      "columnComment": "字段1",
+      "columnNameAlias": "链接形式",
+      "columnAlignment": "Left",
+      "columnFixedWidth": "Left",
+      "columnMinWidth": "100",
+      "isVisible": true,
+      "isColumnFixed": "Left",
+      "columnSlot": "",
+      "formatConfig": {
+        "conertType": "link",
+        "url": ""
+      },
+      "isTotalColumn": false,
+      "isColumnSort": false,
+      "columnHeadTips": "",
+      "columnHeadSlot": ""
+    },
+    {
+      "columnName": "field1",
+      "columnComment": "字段1",
+      "columnNameAlias": "图片形式",
+      "columnAlignment": "Left",
+      "columnFixedWidth": "Left",
+      "columnMinWidth": "100",
+      "isVisible": true,
+      "isColumnFixed": "Left",
+      "columnSlot": "",
+      "formatConfig": {
+        "conertType": "img",
+        "url": ""
+      },
+      "isTotalColumn": false,
+      "isColumnSort": false,
+      "columnHeadTips": "",
+      "columnHeadSlot": ""
+    },
+    {
+      "columnName": "field1",
+      "columnComment": "字段1",
+      "columnNameAlias": "自定义组件形式",
+      "columnAlignment": "Left",
+      "columnFixedWidth": "Left",
+      "columnMinWidth": "100",
+      "isVisible": true,
+      "isColumnFixed": "Left",
+      "columnSlot": "aaa",
+      "isTotalColumn": false,
+      "isColumnSort": false,
+      "columnHeadTips": "",
+      "columnHeadSlot": ""
+    }
+  ],
+  "eventList": [
+    {
+      "runTime": "beforeLoadPage",
+      "sort": 1,
+      "script": "",
+      "isIntercept": false
+    },{
+      "runTime": "beforeLoadPage",
+      "sort": 2,
+      "script": "",
+      "isIntercept": false
+    },{
+      "runTime": "afterLoadPage",
+      "sort": 2,
+      "script": "",
+      "isIntercept": false
+    },{
+      "runTime": "beforeLoadData",
+      "sort": 2,
+      "script": "",
+      "isIntercept": false
+    },{
+      "runTime": "afterLoadData",
+      "sort": 2,
+      "script": "",
+      "isIntercept": false
+    }
+  ],
+  "pageApiUrl":"https://www.joyintech.com"
+}

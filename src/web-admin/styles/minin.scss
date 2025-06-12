@@ -1,0 +1,13 @@
+//字体大小（原始，增量）
+@mixin add-size($val, $size) {
+  font-size: $val+$size !important;
+  [data-size="0"] & {
+    font-size: $val+$size !important; //小号，增量0
+  }
+  [data-size="1"] & {
+    font-size: $val+$size-2 !important; //中号，增量2
+  }
+  [data-size="2"] & {
+    font-size: $val+$size-4 !important; //大号，增量4
+  }
+}

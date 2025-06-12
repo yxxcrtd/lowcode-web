@@ -1,0 +1,85 @@
+.vxe-table{
+  color: #333;
+}
+.vxe-table--render-default{
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji' !important
+}
+.vxe-table--render-default.border--default .vxe-table--header-wrapper, .vxe-table--render-default.border--full .vxe-table--header-wrapper, .vxe-table--render-default.border--outer .vxe-table--header-wrapper{
+  background-color: #f2f5f9  !important;
+}
+.vxe-icon-caret-up:before{
+  font-size: 12px;
+}
+.vxe-icon-caret-down:before{
+  font-size:12px;
+}
+.vxe-table .vxe-sort--asc-btn{
+  top:-2px;
+}
+.vxe-table .vxe-sort--desc-btn{
+  bottom:1px !important;
+}
+.vxe-table--render-default .vxe-table--empty-content{
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.vxe-table--render-default .vxe-body--column:not(.col--ellipsis), .vxe-table--render-default .vxe-footer--column:not(.col--ellipsis), .vxe-table--render-default .vxe-header--column:not(.col--ellipsis){
+  padding: 6px 0 !important;
+}
+.vxe-table--render-default .vxe-body--row.row--checked{
+  background-color: #e0e6ed4d !important;
+}
+.vxe-table--render-default.border--inner .vxe-table--header-wrapper, .vxe-table--render-default.border--none .vxe-table--header-wrapper {
+  background-color: #f2f5f9 !important;
+  border-radius: 4px !important;
+}
+.vxe-table--render-default .vxe-body--row.row--hover{
+  background-color: #ecf5ff !important;
+}
+.vxe-table--render-default.border--inner .vxe-table--border-line {
+  border-width: 0 !important;
+}
+
+
+.span-price{
+  color: #ee9b3e;
+}
+.vxe-table--header-border-line,.vxe-table--render-default .vxe-body--x-space{
+  display: none;
+}
+.vxe-resizable::after{
+  position: absolute;
+  content: "";
+  height: 19px;
+  width: 1px;
+  top: 9px;
+  background: #ccc;
+}
+.vxe-cell--title{
+  font-size: 12px;
+}
+.col--valid-error{
+  .el-input__wrapper, 
+  .el-input__wrapper.is-focus, 
+  .el-input__wrapper:focus, 
+  .el-input__wrapper:hover, 
+  .el-select__wrapper,
+  .el-select__wrapper.is-focus, 
+  .el-select__wrapper:focus, 
+  .el-select__wrapper:hover, 
+  .el-textarea__inner,
+  .el-textarea__inner.is-focus,
+  .el-textarea__inner:focus,
+  .el-textarea__inner:hover {
+    box-shadow: 0 0 0 1px var(--el-color-danger) inset;
+  }
+}
+
+.disable-row{
+  color: #9b9595 !important;
+}
+.vxe-header--column{
+  background-image: unset !important;
+}

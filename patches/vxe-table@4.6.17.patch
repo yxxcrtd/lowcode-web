@@ -1,0 +1,15 @@
+diff --git a/es/tools/dom.js b/es/tools/dom.js
+index 831361f75f6c20b42b0c4ef8afad5388c13a3c9b..1ba22e701dc4a9ab9943ab440a9a1d4a56bde93c 100644
+--- a/es/tools/dom.js
++++ b/es/tools/dom.js
+@@ -114,8 +114,8 @@ export function getOffsetPos(elem, container) {
+ }
+ export function getAbsolutePos(elem) {
+     const bounding = elem.getBoundingClientRect();
+-    const boundingTop = bounding.top;
+-    const boundingLeft = bounding.left;
++    const boundingTop = bounding.top - (window.vxeTableTooltipOffsetLeft || 0);
++    const boundingLeft = bounding.left - (window.vxeTableTooltipOffsetTop || 0);
+     const { scrollTop, scrollLeft, visibleHeight, visibleWidth } = getDomNode();
+     return { boundingTop, top: scrollTop + boundingTop, boundingLeft, left: scrollLeft + boundingLeft, visibleHeight, visibleWidth };
+ }
